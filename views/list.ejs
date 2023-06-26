@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+  <div class="container text-centered">
+    <form action="/search" method="post">
+      <label for="search" class="label">Search</label>
+      <input type="text" name="search" id="" style="-webkit-text-fill-color: black;">
+      <button type="submit" class="btn btn-sm">Go</button>
+    </form>
+
+  </div>
+
+  <div class="container">
+    <form action="/create" method="get">
+      <button type="submit" class="btn">Create Post</button>
+    </form>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="card-deck">
+      <div class="row">
+        <% postList.forEach(function(post){ %>
+
+          <div class="col-4 card-container">
+            <div class="card border-0 marginleftright">
+              <div class="card-body">
+                <!-- If statement making sure the description doesn't warp the size of the text or anything of the sort, before it offers an anchor tag to see the whole post.' -->
+                <h5 class="card-title">
+                  <%= post.title %>
+                </h5>
+                <% if(post.description.length> 180) { %>
+                  <% %>
+                    <p class="card-text">
+                      <%= post.description.substring(0, 180) + "..." %><a href="/something/<%=post.title%>">see more</a>
+                    </p>
+                    <p class="card-text"><small class="text-muted">Author: <%=post.userHandle%></small></p>
+                    <% } else { %>
+
+                      <p class="card-text">
+                        <%= post.description%><a href="/something/<%=post.title%>"> view post</a>
+                      </p>
+                      <p class="card-text"><small class="text-muted">Author: <%=post.userHandle%></small></p>
+                      <% } %>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+      </div>
+    </div>
+  </div>
+  </div>
+  <%- include("partials/footer") %>

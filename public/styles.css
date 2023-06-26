@@ -1,0 +1,123 @@
+.container {
+    text-align: center;
+
+}
+
+.signin {
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    background: -webkit-linear-gradient(#3a2653, #000000);
+
+}
+
+a {
+    background: -webkit-linear-gradient(#EEE2DE, #B31312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    -webkit-text-fill-color: #DDE6ED;
+    background: -webkit-linear-gradient(#000000, #3a2653);
+
+}
+
+.row {
+    border: none;
+}
+
+
+
+.reglogform {
+    margin-top: 15rem;
+}
+
+.reg {
+    width: 20rem;
+    -webkit-text-fill-color: #27374D;
+}
+
+.header {
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    background: -webkit-linear-gradient(#EEE2DE, #B31312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    margin-top: 30rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#EEE2DE, #B31312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(#EEE2DE, #B31312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-color: #B31312;
+    border-top: none;
+    border-right: none;
+
+
+}
+
+.btn:hover {
+    background-color: #9DB2BF;
+}
+
+textarea {
+    width: 25rem;
+    -webkit-text-fill-color: #27374D;
+}
+
+.card-deck {
+    -webkit-text-fill-color: #27374D;
+    text-align: center;
+
+}
+
+.card-container {
+    border: transparent;
+    border-style: none;
+}
+
+.logoutbtn {
+    height: 2rem;
+}
+
+.marginleftright {
+    margin: 1rem;
+
+}
+
+.card {
+    border: 0;
+    background-color: transparent;
+
+}
+
+.card-body {
+    margin: 0.5rem;
+    padding: 1rem;
+    background: none;
+    -webkit-text-fill-color: whitesmoke;
+}
+
+.descendants-h1 {
+    font-family: 'Merienda', cursive;
+    background: -webkit-linear-gradient(#EEE2DE, #B31312);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

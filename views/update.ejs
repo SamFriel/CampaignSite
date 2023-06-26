@@ -1,0 +1,41 @@
+<%- include("partials/header") %>
+  <div class="container">
+    <% if (post !=null){ %>
+      <form action="/update/<%=post.title%>" method="post" name="reglogform">
+        <!-- Email input -->
+        <div class="">
+          <label for="title">Title</label><br>
+          <% if (post !=null){ %>
+            <input type="text" name="title" id="" style="-webkit-text-fill-color: black;" value="<%= post.title %>">
+            <% } %>
+
+
+              <br>
+
+        </div>
+
+        <!-- Password input -->
+        <div class="">
+          <label for="text">Description</label><br>
+          <textarea name="text" id="" cols="30" rows="10" name="text"><%= post.description %></textarea>
+          <br>
+          <label for="hidden">Hidden?</label><br>
+
+
+          <input type="checkbox" class="text-centered reg" name="hidden" id="hidden"><br>
+
+
+
+
+          <button type="submit" class="btn">Update</button><br>
+        </div>
+      </form>
+      <% } %>
+
+  </div>
+
+
+
+
+
+  <%- include("partials/footer") %>

@@ -1,0 +1,47 @@
+<%- include("partials/header") %>
+
+
+  <div class="container">
+    <div class="row">
+      <div style="margin-top: 3rem;">
+
+        <div class="card marginleftright  text-centered">
+          <div class="card-body">
+            <% if (title !==null){ %>
+              <h5 class="card-title" name="title" style="-webkit-text-fill-color: whitesmoke; text-align: center;">
+                <%= title.title%>
+              </h5>
+              <% } %>
+                <% if (title !==null){ %>
+                  <p class="card-text" style="-webkit-text-fill-color: whitesmoke; text-align: center;">
+                    <%= title.description%>
+                  </p>
+                  <% } %>
+          </div>
+        </div>
+
+        <% if (title !==null){ %>
+          <form action="/something/<%=title.title%>" method="post" class="text-centered">
+            <button type="submit" class="btn" name="update" style="-webkit-text-fill-color: whitesmoke;">Edit</button>
+          </form>
+          <% } %>
+            <% if (title !==null){ %>
+              <form action="/delete/<%=title.title%>" method="post" class="text-centered">
+                <button type="submit" class="btn" name="delete"
+                  style="-webkit-text-fill-color: whitesmoke;">Delete</button>
+              </form>
+              <% } %>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <%- include("partials/footer") %>

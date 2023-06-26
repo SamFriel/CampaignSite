@@ -1,0 +1,42 @@
+<%- include("partials/header") %>
+  <div class="container">
+    <form action="/create" method="post" name="reglogform">
+      <!-- Email input -->
+      <div class="">
+        <label for="title">Title</label><br>
+        <input type="text" id="form2Example1" class="text-centered reg" name="title" />
+        <br>
+
+      </div>
+
+      <!-- Password input -->
+      <div class="">
+        <label for="text">Description</label><br>
+        <textarea name="text" id="" cols="30" rows="10" name="text"></textarea>
+        <br>
+        <label for="hidden">Hidden?</label><br>
+        <input type="checkbox" class="text-centered reg" name="hidden"><br>
+        <p>Genre</p>
+        <div class="container-fluid">
+          <% list.forEach((cur)=>{ %>
+            <input type="checkbox" class="" style="display: inline-block; margin-left: 1rem; margin-right: 0rem;"
+              name="<%=cur%>">
+            <label style="display: inline-block " for="<%= cur %>">
+              || <%= cur %>
+            </label>
+
+
+            <% }) %>
+        </div>
+
+        <button type="submit" class="btn">Save</button><br>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+  <%- include("partials/footer") %>
+    <%- include("partials/logout") %>
